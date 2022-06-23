@@ -1,6 +1,6 @@
 <!--      
      discord-time-tags helps you create multi-timezone messages for discord
-     Copyright (C) 2022  NebulaBC
+     Copyright (C) 2022 NebulaBC
 
      This program is free software: you can redistribute it and/or modify
      it under the terms of the GNU Affero General Public License as published
@@ -77,10 +77,10 @@
         <div id="injectionArea">{{ timestamp|safe }}</div>
         </div>
 	<script>
-		function copyToClipboard() {
-					navigator.clipboard.writeText("<t:" + {{ exTimestamp }} + ">");
-		}
+	    function copyToClipboard() {
+	        navigator.clipboard.writeText("<t:" + {{ exTimestamp }} + ">");
+	    }
 	</script>
     </body>
-    <footer><small><a href="https://github.com/NebulaBC/discord-time-tags">Source code</a></small></footer>
+    <footer><small>Copyright (C) 2022 NebulaBC <a href="https://github.com/NebulaBC/discord-time-tags">Source code</a></small></footer>
 </html>
