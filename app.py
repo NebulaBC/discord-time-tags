@@ -38,7 +38,6 @@ def gettime():
     formattedTimestamp = "&lt;t:%s&gt;" % (
         str(datetime.timestamp(date)).split(".", 1)[0]
     )
-    print(formattedTimestamp)
     return render_template(
         "index.html",
         timestamp="<br>Paste this code into discord for<br>a multi-timezone timestamp: %s <button onclick='copyToClipboard()'>copy</button>"
