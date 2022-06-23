@@ -52,7 +52,7 @@
           background-color: var(--bg);
           color: var(--text);
         }
-        input, textarea {
+        input, textarea, button {
             background-color: var(--bg);
             color: var(--text);
         }
@@ -76,6 +76,11 @@
         </form>
         <div id="injectionArea">{{ timestamp|safe }}</div>
         </div>
+	<script>
+		function copyToClipboard() {
+					navigator.clipboard.writeText("<t:" + {{ exTimestamp }} + ">");
+		}
+	</script>
     </body>
     <footer><small><a href="https://github.com/NebulaBC/discord-time-tags">Source code</a></small></footer>
 </html>
