@@ -2,6 +2,11 @@ from flask import Flask, render_template, request
 from datetime import datetime
 from waitress import serve
 import re
+import logging
+logging.basicConfig()
+logger = logging.getLogger('waitress')
+logger.setLevel(logging.DEBUG)
+
 app = Flask(__name__)
 
 @app.route("/")
